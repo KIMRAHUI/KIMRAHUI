@@ -1,7 +1,7 @@
 ### 👋 ¡Hola, soy KIMRAHUI!
 
 <div align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGtqa2I0emF6bHN0bmwyNXdrb2o4a2ZubWNycmYyYTN6amxwMXUzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6ZtaIysXemu30cVi/giphy.gif" width="95%" />
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tlMnN5MDJ4Z2RjczFuNG5icG11eWprcmFqaGNleWF0Nzl2NzNwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Basrh159dGwKY/giphy.gif" width="95%" />
 </div>
 
 ---
