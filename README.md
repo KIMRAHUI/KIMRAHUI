@@ -9,7 +9,7 @@
 
 ---
 
-### 🛠️ About Me & Key Projects
+### About Me & Key Projects
 
 - 💻 **Certifications**
   - Information Processing Industrial Engineer
