@@ -2,15 +2,6 @@
 
 ---
 
-### 🔍 PDF 분석 기반 수정 포인트
-
-1. **`SunoSync AI`**: 전체 서비스 개요(AI 멀티모달 오디오 스펙트럼 분석, Open-CLAP 1024차원 검색, RAG, Web Audio 60fps)와 **대표 성능 최적화 Top 2(NumPy 60배, Fast-Path 20배)**를 모두 포함시켰습니다.
-2. **`cors` (Connecting to Style RoadShop)**: 단순 쇼핑몰/카탈로그가 아닌, **소상공인 로드샵 디지털 전환 플랫폼**(매장 예약/픽업, 토스페이먼츠 결제, MyBatis Dynamic SQL 기반 매출/예약 통합 분석 대시보드, 유해 리뷰 사전 차단, RBAC 3단계 권한 제어)으로 정확하게 정정했습니다.
-3. **`car` (COMMIT CAR)**: **Spring Boot + React + FastAPI 기반 엔드투엔드 AI 차량 진단 및 정비 예약 시스템**(VGG19 타이어 마모 AI 진단, Groq Llama 3/4 차량 상담, 예약 트랜잭션 100% 데이터 무결성 보존, VGG19 모델 가중치 인메모리 피닝 고가용성 확보)으로 명확히 기술했습니다.
-
----
-
-### 🚀 최종 깃허브 대문 (Profile README.md)
 
 ```markdown
 ### 👋 ¡Hola, soy KIMRAHUI!
