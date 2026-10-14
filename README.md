@@ -1,6 +1,3 @@
-
-
-
 ### 👋 ¡Hola, soy KIMRAHUI!
 
 <div align="center">
@@ -19,35 +16,25 @@
   - 2x Claude Course Completions (Building with the Claude API & Model Context)
 
 - 📂 **Key Projects & Technical Case Studies**
-  - 🎧 **`SunoSync AI`** — End-to-End AI & Audio Visual Web OS SaaS
-    - *Description*: An AI-driven audio-visual SaaS platform integrating multimodal audio spectrum analysis, Open-CLAP 1024-dim vector search, lyrics-based RAG copywriting, and real-time 60fps Web Audio visualizers.
-    - ⚡ **3000px HD Cover Generation (60x Speedup: `1,500ms` ➔ `25ms`)**
-      - *Problem*: 9M pixel iteration created a 1.5s computation bottleneck and CPU overload.
-      - *Solution*: Replaced Python nested `for` loops with **NumPy `ogrid` C-level matrix broadcasting**.
-      - *Impact*: Reduced latency from **1,500ms to 25ms (98.3%↓)** for real-time rendering.
-    - 🚀 **Audio Analysis & Waveform Pipeline (20x Speedup: `3.1s` ➔ `0.18s`)**
-      - *Problem*: Full MP3 re-encoding via FFmpeg and triple redundant decoding caused a 3.1s response delay.
-      - *Solution*: Replaced re-encoding with `shutil.copyfile` instant copy (0.001s) and reused single in-memory decoded audio objects.
-      - *Impact*: Cut response time from **3.1s to 0.18s (94.2%↓)** and reduced CPU decoding by **66.7%**.
+  - 🚗 **[`car` (COMMIT CAR)](https://github.com/KIMRAHUI/car)** — AI Vehicle Inspection & Repair Reservation Platform
+    - *Description*: Solo full-stack project (74 days) combining Spring Boot, React, and Python FastAPI for AI-powered tire wear diagnosis (VGG19), LLM vehicle advisory (Groq Llama), repair shop search, and reservation management. Deployed on GCP behind Nginx and Cloudflare.
+    - *Key Highlights*:
+      - Replaced physical `DELETE` on reservation cancel with an `ACTIVE` ➔ `CANCELLED` state transition under `@Transactional`, fixing broken references and keeping full cancellation history.
+      - Fine-tuned an ImageNet-pretrained VGG19 to overcome overfitting on a small tire dataset, and moved model loading to server startup so weights load once instead of per request, which stopped the AI server from crashing under consecutive uploads.
 
-  - 🚗 **`car` (COMMIT CAR)** — End-to-End AI Vehicle Inspection & Reservation System
-    - *Description*: Full-stack platform combining Spring Boot, React, and Python FastAPI for AI-powered tire wear & defect diagnosis (VGG19), LLM vehicle advisory (Groq Llama 3/4), repair shop navigation, and reservation management.
-    - *Key Highlights*: Designed transaction-safe state management (`ACTIVE` ➔ `CANCELLED` soft delete for 100% data consistency) and optimized AI serving by pinning VGG19 weights in memory for high availability.
+  - 🛍️ **[`cors` (Connecting to Style RoadShop)](https://github.com/KIMRAHUI/cors)** — O2O Roadshop Digital Transition & Management Platform
+    - *Description*: Platform connecting local boutique roadshops with consumers, featuring store reservation/pickup, Toss Payments integration, seller revenue analytics, and role-based access control.
+    - *Key Highlights*: Built seller revenue analytics joining the order and reservation domains with MyBatis Dynamic SQL, added profanity pre-filtering for reviews, and set up 3-tier RBAC (customer / seller / admin).
 
-  - 🛍️ **`cors` (Connecting to Style RoadShop)** — O2O RoadShop Digital Transition & Management Platform
-    - *Description*: Digital bridge platform connecting local boutique roadshops with consumers, featuring store reservation/pickup, Toss Payments integration, seller revenue analytics, and RBAC security.
-    - *Key Highlights*: Developed seller revenue analytics combining order and reservation domains via MyBatis Dynamic SQL, implemented profanity pre-filtering for review management, and established 3-tier RBAC access control.
+  - 📚 **[`IT-Note`](https://github.com/KIMRAHUI/IT-Note)** — Technical Knowledge Base
+    - *Description*: Personal archive of CS fundamentals, troubleshooting notes, and daily learnings, written to explain *why* the code works rather than just copying it.
 
-  - ☕ **`study-bbs`** — Spring Boot Community Bulletin Board
-    - *Description*: Backend community board system built with Spring Boot, implementing RESTful API endpoints, MVC architecture, Spring Security authentication, and persistent CRUD operations.
-
-  - 📚 **`IT-Note`** — Technical Knowledge Base & Engineering Archive
-    - *Description*: Curated knowledge base archiving computer science fundamentals, troubleshooting retrospectives, and daily technical learnings.
+  - ☕ **[`study-bbs`](https://github.com/KIMRAHUI/study-bbs)** — Spring Boot Bulletin Board (Learning Project)
+    - *Description*: Study project for Spring Boot MVC fundamentals using MyBatis and Thymeleaf: layered Controller ➔ Service ➔ Mapper structure, user login, post & comment CRUD, and request interceptors.
 
 ### 🌟 Vision & Cheer-Leader Developer
 
-- 💡 **Tech for Inclusion:**   
+- 💡 **Tech for Inclusion:**  
 Deeply interested in building functional features and platforms dedicated to digital inclusion and those who need technical support.
-- 📣 **Cheer-Leader Vibe:**   
+- 📣 **Cheer-Leader Vibe:**  
 Passionate about fostering great collaboration by breaking down barriers and empowering teammates to create a positive synergy together.
-
