@@ -19,7 +19,8 @@
   - 🚗 **[`car` (COMMIT CAR)](https://github.com/KIMRAHUI/car)** — AI Vehicle Inspection & Repair Reservation Platform
     - *Description*: Solo full-stack project (74 days) combining Spring Boot, React, and Python FastAPI for AI-powered tire wear diagnosis (VGG19), LLM vehicle advisory (Groq Llama), repair shop search, and reservation management. Deployed on GCP behind Nginx and Cloudflare.
     - *Key Highlights*:
-      - Replaced physical `DELETE` on reservation cancel with an `ACTIVE` ➔ `CANCELLED` state transition under `@Transactional`, fixing broken references and keeping full cancellation history.
+      - Replaced physical `DELETE` on reservation cancel with a `CANCELED` status update under `@Transactional`, fixing broken references and keeping full cancellation history.
+      - Secured the reservation API by checking ownership against the logged-in session user, so users can no longer view or cancel other people's reservations by changing an email or ID.
       - Fine-tuned an ImageNet-pretrained VGG19 to overcome overfitting on a small tire dataset, and moved model loading to server startup so weights load once instead of per request, which stopped the AI server from crashing under consecutive uploads.
 
   - 🛍️ **[`cors` (Connecting to Style RoadShop)](https://github.com/KIMRAHUI/cors)** — O2O Roadshop Reservation & Sales Management Platform (Team of 3)
