@@ -26,8 +26,6 @@
     - *Description*: Platform connecting local boutique roadshops with consumers, featuring store reservation/pickup, Toss Payments integration, seller revenue analytics, and role-based access control.
     - *Key Highlights*: Built seller revenue analytics joining the order and reservation domains with MyBatis Dynamic SQL, added profanity pre-filtering for reviews, and set up 3-tier RBAC (customer / seller / admin).
 
-  - 📚 **[`IT-Note`](https://github.com/KIMRAHUI/IT-Note)** — Technical Knowledge Base
-    - *Description*: Personal archive of CS fundamentals, troubleshooting notes, and daily learnings, written to explain *why* the code works rather than just copying it.
 
   - ☕ **[`study-bbs`](https://github.com/KIMRAHUI/study-bbs)** — Spring Boot Bulletin Board (Learning Project)
     - *Description*: Study project for Spring Boot MVC fundamentals using MyBatis and Thymeleaf: layered Controller ➔ Service ➔ Mapper structure, user login, post & comment CRUD, and request interceptors.
