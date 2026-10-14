@@ -22,10 +22,16 @@
       - Replaced physical `DELETE` on reservation cancel with an `ACTIVE` ➔ `CANCELLED` state transition under `@Transactional`, fixing broken references and keeping full cancellation history.
       - Fine-tuned an ImageNet-pretrained VGG19 to overcome overfitting on a small tire dataset, and moved model loading to server startup so weights load once instead of per request, which stopped the AI server from crashing under consecutive uploads.
 
-  - 🛍️ **[`cors` (Connecting to Style RoadShop)](https://github.com/KIMRAHUI/cors)** — O2O Roadshop Digital Transition & Management Platform
-    - *Description*: Platform connecting local boutique roadshops with consumers, featuring store reservation/pickup, Toss Payments integration, seller revenue analytics, and role-based access control.
-    - *Key Highlights*: Built seller revenue analytics joining the order and reservation domains with MyBatis Dynamic SQL, added profanity pre-filtering for reviews, and set up 3-tier RBAC (customer / seller / admin).
+  - 🛍️ **[`cors` (Connecting to Style RoadShop)](https://github.com/KIMRAHUI/cors)** — O2O Roadshop Reservation & Sales Management Platform (Team of 3)
+    - *Description*: Platform connecting local boutique roadshops with consumers, featuring store reservation/pickup, Toss Payments, seller revenue analytics, and staff permission management.
+    - *My Role*:
+      - Built seller revenue analytics combining the order and reservation domains with MyBatis Dynamic SQL.
+      - Implemented a 3-step review trust flow: reviews only after purchase confirmation ➔ profanity filter ➔ user reports & admin review.
+      - Designed 3-tier staff RBAC (master / manager / staff) enforced in a Validator layer.
 
+  - 🧠 **[`my-brain` (My Second Brain)](https://github.com/KIMRAHUI/my-brain)** — RAG Study Assistant Built on My Notion Notes
+    - *Description*: Personal chatbot that syncs my Notion study notes to GitHub daily via GitHub Actions and answers questions grounded in those notes with LlamaIndex and Gemini. Chat history is stored in Supabase, so it works across refreshes and on mobile.
+    - *Key Highlights*: Stopped full re-embedding on every restart by backing up the index to Supabase Storage and re-embedding only changed notes. Handles free-tier API quota limits with backoff retries and per-document checkpoints, so an interrupted build resumes where it stopped.
 
   - ☕ **[`study-bbs`](https://github.com/KIMRAHUI/study-bbs)** — Spring Boot Bulletin Board (Learning Project)
     - *Description*: Study project for Spring Boot MVC fundamentals using MyBatis and Thymeleaf: layered Controller ➔ Service ➔ Mapper structure, user login, post & comment CRUD, and request interceptors.
